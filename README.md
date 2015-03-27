@@ -3,8 +3,11 @@ Mines data from the offender search provided by the Missouri Department of Corre
 
 ##Usage
 Returns a pandas dataframe
+
 import pandas as py
+
 newData = chainLink()
+
 myDataFrame = newData()
 
 ###Mit License
