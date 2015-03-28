@@ -29,7 +29,7 @@ class chainLink:
 
   def __str__(self):
     try:
-      return self.url, "?", selectors
+      print self.url, "?", selectors
     except:
       print "Unable to display url"
   
@@ -59,7 +59,7 @@ class chainLink:
           continue
       dataset.append(row_data)
       
-    return '0'
+    return pd.DataFrame(dataset)
   
 #class description
 #select search option: default = id number optional = firstName & lastName
