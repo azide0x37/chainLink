@@ -33,7 +33,7 @@ class chainLink:
     except:
       print "Unable to display url"
   
-  def __call__(self):
+  def scrape(self):
     webpageSouped = BeautifulSoup(self.response.read())
     
     #Strip headings, send to list
@@ -69,4 +69,4 @@ class chainLink:
 #extract data to dataFrame
 #return data
 myLink = chainLink()
-print myLink()
+print myLink.scrape()
